@@ -1,0 +1,17 @@
+n=int(input())
+a=list(map(int,input().split()))
+s=[]
+for i in a:
+    s.append(-1)
+for i in range(len(a)):
+    c=1
+    for j in range(i+1,len(a)):
+        if(a[i]==a[j]):
+            c+=1
+            s[j]=0
+    if(s[i]!=0):
+        s[i]=c
+for i in range(len(s)):
+    if(s[i]!=0):
+        print(a[i],end=' ')
+    
