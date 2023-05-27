@@ -1,0 +1,9 @@
+n=int(input())
+a=list(map(int,input().split()))
+k=int(input())
+for k in range(k):
+    for i in range(1,n):
+        for j in range(n-1):
+            a[j],a[j+1]=a[j+1],a[j]
+for s in a:
+    print(s,end=' ')
