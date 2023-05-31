@@ -1,0 +1,8 @@
+n=int(input())
+a=list(map(int,input().split()))
+import math
+sum=0
+for i in a:
+    if (int(math.sqrt(i))*int(math.sqrt(i))==i):
+        sum=sum+i
+print(sum)
