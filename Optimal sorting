@@ -1,0 +1,11 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    a1=tuple(a)
+    a.sort()
+    if(a==list(a1)):
+        print('0')
+    else:
+        print(max(a)-min(a))
+    
