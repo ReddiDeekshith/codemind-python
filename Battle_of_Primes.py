@@ -1,12 +1,16 @@
+def is_prime(n):
+    for i in range(2,n):
+        if(n%i==0):
+            return 0
+    else:
+        return 1
 a=int(input())
 b=int(input())
-m=a+b
+c=a+b
+t=c+1
 while(1):
-    c=m+1
-    for i in range(2,c):
-        if(c%i==0):
-            m=m+1
-            break
-    else:
+    if(is_prime(t)):
         break
-print(c-(a+b))
+    else:
+        t+=1
+print(t-c)
