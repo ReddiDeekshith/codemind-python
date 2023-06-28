@@ -1,12 +1,9 @@
 n=int(input())
-m=n*n
-t=m
-sums=0
-while(t!=0):
-    r=t%10
-    sums+=r
-    t=t//10
-if(sums==n):
+s=str(n*n)
+a=0
+for i in s:
+    a=a+int(i)
+if(a==n):
     print("Neon Number")
 else:
     print("Not Neon Number")
