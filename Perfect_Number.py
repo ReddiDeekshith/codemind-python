@@ -1,8 +1,6 @@
 n=int(input())
-t=n
-sum=0
+s=0
 for i in range(1,n):
-    if t%i==0:
-        sum=sum+i
-print(sum==n)
-    
+    if(n%i==0):
+        s=s+i
+print(s==n)
